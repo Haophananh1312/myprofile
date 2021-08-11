@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(/pexels-hasan-albari-1229861.jpg) no-repeat;
+  background: url("pexels-hasan-albari-1229861.jpg") no-repeat;
   background-size: cover;
 }
 p {
