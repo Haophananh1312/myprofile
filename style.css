@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url(/pexels-hasan-albari-1229861.jpg) no-repeat;
+  background-size: cover;
+}
+p {
+  font-size: 19px;
+  font-family:'Roboto Mono', sans-serif ;
+}
+h3 {
+  font-size: 25px;
+  font-family:'Roboto Mono', sans-serif ;
+}
+h4 {
+  font-size: 20px;
+  font-family:'Roboto Mono', sans-serif ;
+}
+.box {
+  width: 550px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+}
+.box-img {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+.box h3 {
+  font-family:'Century Gothic', sans-serif;
+  padding: 5%;
+}
+.box h4 {
+  font-family:'Century Gothic', sans-serif;
+  padding: 5%;
+}
+.box p {
+  font-family:'Century Gothic', sans-serif;
+  padding: 5%;
+}
+.icon ul {
+  margin: 0;
+  padding: 0;
+}
+.icon li {
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.icon li a {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  transition: all ease-in-out 200ms;
+  margin: 15px;
+}
+.icon li a:hover {
+  color: rgb(63, 63, 63);
+}
+h1 {
+  text-align: right;
+  font-size: 18px;
+  margin: 6px;
+}
+h1 strong {
+  background: #20201f;
+  float: left;
+  font-size: 18 px;
+  padding: 1px 8px;
+  border-radius: 5%;
+}
