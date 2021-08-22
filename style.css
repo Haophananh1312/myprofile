@@ -1,81 +1,171 @@
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
 }
-body {
-  margin: 0;
-  padding: 0;
-  background: url("pexels-hasan-albari-1229861.jpg") no-repeat;
-  background-size: cover;
+.banner-text {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	font-size: 50px;
+	margin-top: 20%;
 }
-p {
-  font-size: 19px;
-  font-family:'Roboto Mono', sans-serif ;
+.banner-text .tittle {
+	color: #ffff;
+	text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #ba382f,
+    0 0 82px #ba382f,
+    0 0 92px #ba382f,
+    0 0 102px #ba382f,
+    0 0 151px #ba382f;
+	font-size: 75px;
+	font-family: "Roboto", sans-serif;
 }
-h3 {
-  font-size: 25px;
-  font-family:'Roboto Mono', sans-serif ;
+.banner-text .subtittle {
+	color: #ffff;
+	text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #ba382f,
+    0 0 82px #ba382f,
+    0 0 92px #ba382f,
+    0 0 102px #ba382f,
+    0 0 151px #ba382f;
+	font-size: 50px;
+	font-family: "Roboto", sans-serif;
 }
-h4 {
-  font-size: 20px;
-  font-family:'Roboto Mono', sans-serif ;
+.tittle,.subtittle,span {
+	font-size: 4.2rem;
+	animation: flicker 1.5s infinite alternate;     
+  }
+  
+  /* Flickering animation */
+  @keyframes flicker {
+	  
+	0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+		text-shadow:
+		0 0 4px #fff,
+		0 0 11px #fff,
+		0 0 19px #fff,
+		0 0 40px #ba382f,
+		0 0 80px #ba382f,
+		0 0 90px #ba382f,
+		0 0 100px #ba382f,
+		0 0 150px #ba382f;
+	
+	}
+	
+	20%, 24%, 55% {        
+		text-shadow: none;
+	}    
+  }
+
+.animation-area {
+	background: linear-gradient(to left, #363da7, #ba382f);
+	width: 100%;
+	height: 100vh;
 }
-.box {
-  width: 550px;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  text-align: center;
-  margin: auto;
-  margin-top: 5%;
-  color: white;
-  font-family: 'Century Gothic', sans-serif;
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
-.box-img {
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
 }
-.box h3 {
-  font-family:'Century Gothic', sans-serif;
-  padding: 5%;
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
 }
-.box h4 {
-  font-family:'Century Gothic', sans-serif;
-  padding: 5%;
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
 }
-.box p {
-  font-family:'Century Gothic', sans-serif;
-  padding: 5%;
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
 }
-.icon ul {
-  margin: 0;
-  padding: 0;
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
 }
-.icon li {
-  display: inline-block;
-  margin: 6px;
-  list-style: none;
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
 }
-.icon li a {
-  color: white;
-  text-decoration: none;
-  font-size: 50px;
-  transition: all ease-in-out 200ms;
-  margin: 15px;
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
 }
-.icon li a:hover {
-  color: rgb(63, 63, 63);
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
 }
-h1 {
-  text-align: right;
-  font-size: 18px;
-  margin: 6px;
+.home {
+	display: block;
+    z-index: 2;
+	margin-left: .5rem;
 }
-h1 strong {
-  background: #20201f;
-  float: left;
-  font-size: 18 px;
-  padding: 1px 8px;
-  border-radius: 5%;
-} */
+.home a {
+	display: inline-block;
+    background: #ba382f;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 32px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #ba382f;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+.home a.more-detail {
+	background:rgba(33,33,33,.8);
+    color: #363da7;
+    border: 2px solid #363da7;
+}
+.home a:hover {
+	color: #ba382f;
+	background: none;
+}
+.home a.more-detail:hover {
+	background: #363da7;
+	color: white;
+}
