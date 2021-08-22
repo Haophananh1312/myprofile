@@ -1,0 +1,1 @@
+alert("Dự kiến sẽ full update vào thứ 4")
