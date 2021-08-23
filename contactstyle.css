@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.animation-area {
+	background: url("background.jpeg"), no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+.banner-text {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	font-size: 50px;
+	margin-top: 20%;
+}
+.home {
+	display: block;
+    z-index: 2;
+	margin-left: .5rem;
+}
+.home a {
+	font-family: "Roboto", sans-serif;
+	display: inline-block;
+    background: #00aeff;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 12px 32px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #0f0018;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+.home a.more-detail {
+	font-family: "Roboto", sans-serif;
+	background:rgba(255, 255, 255, 0.8);
+    color: #000000;
+    border: 2px solid #ffffff;
+}
+.home a:hover {
+	color: #0276fa;
+	background: none;
+}
+.home a.more-detail:hover {
+	background: #221d1d;
+	color: white;
+}
+html, body, .container{
+    width: 100%;
+    height: 100%;
+    min-width: 500px;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .container{
+    background-color: #007ced;
+      background: linear-gradient(to bottom, #007ced 1%,#cce7ff 100%);
+  }
+  #cloud-intro{
+    position: relative;
+    height: 100%;
+    background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+    background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0 200px,
+                url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+                url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px;
+      animation: wind 20s linear infinite;
+  }
+  @keyframes wind{
+    0% {
+      background-position: 0 200px, 0 300px, 100px 250px;
+    }
+    100% {
+      background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+    }
+  
+  }
