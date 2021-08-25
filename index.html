@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>Anh Hao</title>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'><link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,20 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="logo">AnhHao</a>
+      <a href="index.html" class="logo">Anh<span>Hao</span></a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#careers">Careers</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
@@ -34,16 +31,17 @@
         <div class="subtittle">AND IM A STUDENT</div>
       </div>
     <div class="animation-area"  id="home"></div>
+    <!-- About -->
     <section class="about" id="about">
       <div class="max-width">
-          <h2 class="title"><ion-icon name="person-outline" class="person-icon"></ion-icon></h2>
+          <h2 class="title"><i class='bx bxs-user-detail' ></i> </h2>
           <div class="about-content">
               <div class="column-left">
                   <img src="unnamed.jpg" alt="">
               </div>
               <div class="column-right">
                   <div class="about-max-width">
-                      <div class="text">Thanks for visiting my website. <span class="typing-2"></span></div>
+                      <div class="text">My Fact.</div>
                   <div class = "introduction">
                       <p>I'm currently a student at Bui Thi Xuan hightschool in Bien Hoa city, i have a fancy for Computer Science
                         and i have a crush on music too, i used to want to be a musician when i was kid.
@@ -53,6 +51,81 @@
           </div>
       </div>
   </section>
-
+  <hr class="one">
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title"><i class='bx bxs-contact'></i></h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in Touch</div>
+                <p>If you would like to contact me. Please, don't be shy just feel free to send me a message via my email which is provided below. It's my honor to have a conversation with you.</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class='bx bx-user'></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Anh Hao</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class='bx bx-map'></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Tan Uyen, Binh Duong</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class='bx bx-mail-send'></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">ahao113112@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message me</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Name" required>
+                            <i class='bx bxs-user-circle' ></i>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                            <i class='bx bxl-google'></i>
+                        </div>
+                    </div>
+                    <div class="field subject">
+                        <input type="text" placeholder="Subject" required>
+                        <i class='bx bx-message-square-dots'></i>
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        <i class='bx bx-comment' ></i>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit"><div class = "message-btn">
+                            <p>Send message</p><i class='bx bx-send' ></i></i>
+                        </div></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end -->
+<footer>
+    <div class="max-width">
+       <div class="social-media-and-author"> 
+        <ul class="nav-footer" id="icons">
+        </ul>
+        <span>Created By <a href="https://www.facebook.com/panhhao2004/">Anh Hao</a> | <span class="bx bx-copyright"></span> 2021 All rights reserved.</span>
+       </div>
+    </div>
+</footer>
+</div>
 </body>
 </html>
