@@ -620,3 +620,6 @@ footer span a:hover{
   display: flex;
   flex-direction: column;
 }
+p {
+  color: #555;
+}
